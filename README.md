@@ -1,18 +1,21 @@
 # forecast-app
 
-Node.js command line application that takes US post code and retrieves the forecast for today.
-It uses [Forecast.io](https://forecast.io) API.
+Node.js command line application that takes a city name and retrieves the forecast for today.
+It uses [Weather API](https://www.weatherapi.com).
 
-The purpose of the app was to practice fetching data using **get** method and using data, completion and error events on the response.
+The purpose of the app was to practice fetching data using **https.get()** and using data, completion and error events on the response.
 
 ### Example
 
+To run the app:
 ```
-node forecast.js 78704
+node forecast.js London
 ```
+The app requires an API key that can be created for free on Weather API [website](https://www.weatherapi.com/pricing.aspx).
+Add this key to the ``API_KEY`` constant in the app. 
 
 ### Built With
-JavaScript
+JavaScript, Node.js (v. ^14.17.0)
 
 ### Authors
 Radoslaw Soltan
