@@ -9,7 +9,7 @@ The purpose of the app was to practice fetching data using **https.get()** and u
 
 To run the app:
 ```
-node forecast.js London
+node app.js London
 ```
 The app requires an API key that can be created for free on Weather API [website](https://www.weatherapi.com/pricing.aspx).
 Add this key to the ``API_KEY`` constant in the app. 
