@@ -1,5 +1,7 @@
 const http = require('http');
 const https = require('https');
+const api = require('./api.json');
+const API_KEY = api.key;
 
 /**
  * Function that print error message using console.error
@@ -37,16 +39,15 @@ const printMessage = (city, forecast) => {
 /**
  * Gets current weather for a city. Requires passing an API key for Weather API.
  * @param city - String
- * @param key - String API key for https://www.weatherapi.com API
  */
-const get = (city, key) => {
+const get = city => {
 
   if (!city) {
     console.log('Please provide city.');
   }
 
   try {
-    const request = https.get(`https://api.weatherapi.com/v1/current.json?key=${key}&q=${city}&aqi=no`, response => {
+    const request = https.get(`https://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${city}&aqi=no`, response => {
       let responseBody = '';
 
       if (response.statusCode !== 200) {

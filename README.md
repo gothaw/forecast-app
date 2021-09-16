@@ -12,7 +12,7 @@ To run the app:
 node app.js London
 ```
 The app requires an API key that can be created for free on Weather API [website](https://www.weatherapi.com/pricing.aspx).
-Add this key to the ``API_KEY`` constant in the app. 
+Add this key in ``api.json`` file so it can be used by the app. 
 
 ### Built With
 JavaScript, Node.js (v. ^14.17.0)
