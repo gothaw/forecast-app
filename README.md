@@ -1,5 +1,8 @@
 # forecast-app
 
+![city](https://user-images.githubusercontent.com/42295023/139322847-f1e73bbd-0dd0-4b0e-9339-dbc91976ac5e.png)
+
+
 Node.js command line application that takes a city name and retrieves the forecast for today.
 It uses [Weather API](https://www.weatherapi.com).
 
